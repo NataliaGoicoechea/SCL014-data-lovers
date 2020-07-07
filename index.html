@@ -2,12 +2,68 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>PotterLand</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;600&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
   </head>
-  <h1> PotterLand</h1>
   <body>
-    <div id="root"></div>
+    <!--Header-->
+    <header>
+      <img src="images/Harry-James-Potter-Logo.png" alt="Logo de Potterland">
+      <nav>
+        <ul>
+          <li><a href=""> Personajes</a></li>
+          <li><a href=""> Tips Wizards Unite</a></li>
+          <li><a href=""> Hechizos y Pociones</a></li>
+          <li><a href=""> ¿Sabías qué?</a></li>
+        </ul>
+      </nav>  
+    </header>
+    <!--Pantalla Bienvenida-->
+    <section>
+      <img src="images/b0ff1a3520386aacce5cbad2986edc89.jpg" alt="">
+      <section>
+        <img src="images/Harry-James-Potter-Logo.png" alt="">
+        <h2>Bienvenido(a)s Brujas y Magos</h2>
+        <p>A <h1>PotterLand</h1>el lugar donde podrás acceder a la magia del mundo de HarryPotter</p>
+        <form action="">
+          <input type="text" placeholder="Ingresa tu Nombre">
+          <button>Entrar</button>
+        </form>
+      </section>
+    </section>
+  <!--Pantalla Principal-->
+    <main>
+      <p>Hola <span id=""></span></p>
+      <h2>Personajes de Harry Potter</h2>
+      <!--Filtro y Buscador-->
+      <section>
+        <label for="">Filtro</label>
+        <select name="" id="">
+          <option value="all">Todos</option>
+          <option value="az">De la A a la Z</option>
+          <option value="studyHouse">Casa de Estudios</option>
+          <option value="patronus">Patronus</option>
+          <option value="wands">Varitas</option>
+        </select>
+      </section>
+      <section>
+        <form action="">
+          <input type="search">
+          <input type="submit">
+        </form>
+      </section>
+      <form action=""></form>
+         <!--Tarjetas de personajes-->
+         <section>
+          <div id="root">
+
+          </div>
+        
+         </section>
+    </main>
+ 
+
     <script src="main.js" type="module"></script>
   </body>
 </html>
