@@ -2,3 +2,9 @@ body{
     font-family: 'Eczar', serif;
     font-family: 'Montserrat', sans-serif;
 }
+
+img{
+    object-fit: cover;
+    width: 150px;
+    height: 200px;
+}
