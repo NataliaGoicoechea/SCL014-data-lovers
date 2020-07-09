@@ -8,59 +8,77 @@
   </head>
   <body>
     <!--Header-->
-    <header>
-      <img src="images/Harry-James-Potter-Logo.png" alt="Logo de Potterland">
-      <nav>
+    <header id="header" class="not-visible">
+      <img class="logo" src="images/Harry-James-Potter-Logo.png" alt="Logo de Potterland">
+      <nav class="">
         <ul>
           <li><a href=""> Personajes</a></li>
-          <li><a href=""> Tips Wizards Unite</a></li>
-          <li><a href=""> Hechizos y Pociones</a></li>
+          <li><a href=""> Tips del juego</a></li>
+          <li><a href=""> Hechizos</a></li>
           <li><a href=""> ¿Sabías qué?</a></li>
         </ul>
       </nav>  
+      <form class="" >
+        <input type='text' id='search-container' placeholder='Buscar...'>
+        <input type='button' id='search' value='Ir'>
+       <!-- <img src="" alt="">--> 
+      </form>
     </header>
     <!--Pantalla Bienvenida-->
-    <section>
-      <img src="images/b0ff1a3520386aacce5cbad2986edc89.jpg" alt="">
-      <section>
-        <img src="images/Harry-James-Potter-Logo.png" alt="">
+    <section id="welcome" class="welcome">
+      <img  class="bkgnd-image" src="images/b0ff1a3520386aacce5cbad2986edc89.jpg" alt="">
+      <section class="sign-in">
+        <img class="logo" src="images/Harry-James-Potter-Logo.png" alt="Logo de Potterland">
         <h2>Bienvenido(a)s Brujas y Magos</h2>
         <p>A <h1>PotterLand</h1>el lugar donde podrás acceder a la magia del mundo de HarryPotter</p>
-        <form action="">
-          <input type="text" placeholder="Ingresa tu Nombre">
-          <button>Entrar</button>
+        <form class="">
+          <input type="text" id="name" placeholder="Ingresa tu Nombre">
+          <button id="button-in" class="">Entrar</button>
         </form>
       </section>
     </section>
   <!--Pantalla Principal-->
-    <main>
-      <p>Hola <span id=""></span></p>
-      <h2>Personajes de Harry Potter</h2>
-      <!--Filtro y Buscador-->
-      <section>
-        <label for="">Filtro</label>
-        <select name="" id="">
-          <option value="all">Todos</option>
-          <option value="az">De la A a la Z</option>
-          <option value="studyHouse">Casa de Estudios</option>
-          <option value="patronus">Patronus</option>
-          <option value="wands">Varitas</option>
-        </select>
+    <main id="principalScreen" class="principal-screen not-visible">
+      <!--Sección Personajes-->
+      <section class='' id="root">
+        <h2>Personajes de Harry Potter</h2>
+        <p>Hola <span id="showName"></span></p>
+        <!--Filtro-->
+        <section>
+          <label for="">Filtrar por:</label>
+          <select name="" id="">
+            <option value="all">Todos</option>
+            <option value="az">De la A a la Z</option>
+            <option value="studyHouse">Casa de Estudios</option>
+            <option value="patronus">Patronus</option>
+            <option value="wands">Varitas</option>
+          </select>
+        </section>
       </section>
-      <section>
-        <form action="">
-          <input type="search">
-          <input type="submit">
-        </form>
-      </section>
-      <form action=""></form>
-         <!--Tarjetas de personajes-->
-         <section id="root">
-       
-         </section>
+      <!--Sección Tips del juego-->
+      <section class="" id=""></section>
+      <!--Sección Hechizos-->
+      <section class="" id=""></section>
+      <!--Sección Sabías qué-->
+      <section class="" id=""></section>
     </main>
- 
+<!--Footer-->
+    <footer class="not-visible" id="">
+      <img src="images/Harry-James-Potter-Logo.png" alt="Logo de Potterland">
+      <ul>
+        <li><a href=""> Personajes</a></li>
+        <li><a href=""> Tips del juego</a></li>
+        <li><a href=""> Hechizos</a></li>
+        <li><a href=""> ¿Sabías qué?</a></li>
+      </ul>
+      <section>
+        <li><a href=""> Descarga Wizards Unite en tu móvil</a></li>
+        <a href="https://play.google.com/store/apps/details?id=com.nianticlabs.hpwu.prod&hl=es_CL" target="_blank"><img src="images/disponible-en-google-play-badge-2.png" alt="Link descarga Google Play"></a>
+        <a href="https://apps.apple.com/us/app/harry-potter-wizards-unite/id1452352832" target="_blank"><img src="images/itunes-app-store-logo (1).png" alt="Link descarga App Store"></a>
+      </section>
+        <p>©2020 PotterLand - Todos los derechos reservados.</p>
 
-    <script src="main.js" type="module"></script>
-  </body>
+    </footer>
+ <script src="main.js" type="module"></script>
+</body>
 </html>
