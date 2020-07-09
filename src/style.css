@@ -1,10 +1,52 @@
-body{
-    font-family: 'Eczar', serif;
-    font-family: 'Montserrat', sans-serif;
+/*Se hace función no mostrar*/
+
+.not-visible {
+    display: none;
 }
 
-img{
+/*Se coloca un margen de 0 */
+
+body{
+    margin: 0;
+    height: auto; 
+}
+
+.welcome{
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+.bkgnd-image{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+}
+
+.logo{
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+.sign-in{
+    position: relative;
+    
+}
+
+button:hover {
+
+  }
+  button:active {
+
+  }
+
+
+/*img{
     object-fit: cover;
     width: 150px;
     height: 200px;
-}
+
+    font-family: 'Eczar', serif;
+    font-family: 'Montserrat', sans-serif;
+}*/

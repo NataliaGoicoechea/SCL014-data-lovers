@@ -1,6 +1,34 @@
 import data from './data/potter/potter.js';
 import { characters } from './data.js';
 
+//Agregando un evento al botón entrar
+document.getElementById('button-in').addEventListener('click', showPrincipalScreen);
+ 
+//ocultar y mostrar pantallas
+function showPrincipalScreen() {
+   let user = document.getElementById('name').value; 
+    document.getElementById('showName').innerHTML = user;
+    document.getElementById('welcome').classList.add('not-visible');
+    console.log('oculta caja bienvenida');
+    document.getElementById('principal-screen').classList.remove('not-visible');
+    console.log('principal-screen');
+    document.getElementById('header').classList.remove('not-visible');
+    console.log('header');
+};             
+
+
+
+//Buscador
+let find = '';
+document.getElementById('search').onclick = function (){
+    location.href = document.getElementById('search-container').value;
+    document.getElementById('search').innerHTML = find;
+    console.log(find);
+};
+
+
+
+
 //variable que muestra todos los personajes en la página principal
 
 const allCharacters = document.getElementById('root'); //llamando al ID del html dentro d ela variable allcharacters
