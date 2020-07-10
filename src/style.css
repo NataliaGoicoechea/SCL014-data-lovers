@@ -1,17 +1,67 @@
-/*Se hace función no mostrar*/
-
+/* Se hace función no mostrar */
 .not-visible {
     display: none;
 }
 
-/*Se coloca un margen de 0 */
+/* CAJA PADRE */
+.container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
 
+/* BODY */
 body{
     margin: 0;
     height: auto; 
-    display: flex;
+    background-color: #7C7B7B;
+    flex-wrap: wrap;
 }
 
+/* HEADER */
+header{
+    margin: 0;
+    background-color: #04031F;
+    width: 100%;
+    height: 100px;
+}
+
+.menu{
+    float: right;
+}
+
+nav{
+    display: inline-block;
+}
+nav li{
+    display: inline;
+}
+nav a{
+    color: #D2A03A;
+    text-decoration: none;
+    font-family: 'Eczar', serif;
+    font-size: 21px;
+    padding: 15px;
+}
+nav a:hover{
+    color: #ffffff;
+    text-decoration: underline #D2A03A ;
+}
+
+.logo{
+    margin: 0 auto;
+    width: 15%;
+    height: auto;
+}
+.logo img{
+    float: left;
+}
+
+.search{
+    float: right;
+}
+
+/* PANTALLA BIENVENIDA */
 .welcome{
     width: 100%;
     height: auto;
@@ -25,10 +75,6 @@ body{
     opacity: 0.6;
 }
 
-.logo{
-    max-width: 200px;
-    margin: 0 auto;
-  }
 
 .sign-in{
     position: relative;
