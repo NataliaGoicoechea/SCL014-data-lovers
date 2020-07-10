@@ -3,6 +3,10 @@
     display: none;
 }
 
+.text-center{
+    text-align: center;
+}
+
 /* CAJA PADRE */
 .container{
     display: flex;
@@ -13,7 +17,12 @@
 /* BODY */
 body{
     margin: 0;
-    height: auto; 
+    height: auto;
+    display: flex;
+    object-fit: cover;
+    width: 150px;
+    height: 200px;
+    font-family: 'Montserrat', sans-serif;
     background-color: #7C7B7B;
     flex-wrap: wrap;
 }
@@ -59,14 +68,45 @@ nav a:hover{
 
 .search{
     float: right;
+
 }
 
 /* PANTALLA BIENVENIDA */
 .welcome{
+    background-image: url(images//b0ff1a3520386aacce5cbad2986edc89.jpg);
+    background-size: cover;
+    background-position: bottom;
     width: 100%;
-    height: auto;
     position: absolute;
+    height: 100vh;
 }
+
+.sign-in{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 18px;
+    color: #ffffff;
+    background: #2e31352f;
+    margin-top: 2px;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.buttonIn{ 
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 10px;
+    color: #061130;
+    background-color: #D2A03A;
+    border-radius: 6px;
+  }
+
+  .input{
+    margin: 
+  }
 
 .bkgnd-image{
     position: absolute;
@@ -76,17 +116,6 @@ nav a:hover{
 }
 
 
-.sign-in{
-    position: relative;
-    
-}
-
-button:hover {
-
-  }
-  button:active {
-
-  }
 
 
 /*img{
@@ -96,4 +125,8 @@ button:hover {
 
     font-family: 'Eczar', serif;
     font-family: 'Montserrat', sans-serif;
+
+    button:active {
+    background: #C6C6C6;
+  }
 }*/
