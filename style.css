@@ -1,8 +1,8 @@
-/* Se hace función no mostrar */
+/* Función no mostrar */
 .not-visible {
     display: none;
 }
-
+/* Centrar Texto */
 .text-center{
     text-align: center;
 }
@@ -16,12 +16,11 @@
 
 /* BODY */
 body{
-    margin: 0;
+    margin: 0px;
+    width: 100%;
     height: auto;
-    object-fit: cover;
     font-family: 'Montserrat', sans-serif;
-    background-color: #7C7B7B;
-    flex-wrap: wrap;
+    background-color: #3E3E3E;
 }
 
 /* HEADER */
@@ -32,11 +31,10 @@ header{
     height: 100px;
     align-self: center;
 }
-
+/* Nav */
 .menu{
     float: right;
 }
-
 nav{
     display: inline-block;
 }
@@ -54,7 +52,7 @@ nav a:hover{
     color: #ffffff;
     text-decoration: underline #D2A03A ;
 }
-
+/* Logo PotterLand */
 .logo{
     margin: 0 auto;
     width: 15%;
@@ -63,15 +61,16 @@ nav a:hover{
 .logo img{
     float: left;
 }
-
+/* Buscador */
 .search{
     float: right;
 
 }
 
 /* PANTALLA BIENVENIDA */
+/* Background */
 .welcome{
-    background-image: url(images//b0ff1a3520386aacce5cbad2986edc89.jpg);
+    background-image: url(images/Hogwarts.jpg);
     background-size: cover;
     background-position: bottom;
     width: 100%;
@@ -87,7 +86,12 @@ nav a:hover{
     background-color: rgba(0, 0, 0, 0.755);
     position: absolute;
 }
-
+/* Logo PotterLand Bienvenida */
+.logo-welcome{
+    width: 50%;
+    height: auto;
+}
+/* Cuadro Bienvenida */
 .sign-in{
     position: absolute;
     left: 50%;
@@ -121,20 +125,14 @@ nav a:hover{
     margin-top: 15px;
     margin-bottom: 15px;
 }
-
-.logo-welcome{
-    width: 50%;
-    height: auto;
-}
-
 .input{
     padding: 8px;
     border-radius: 8px;
     font-size: 18px;
 }
 
-/* BOTÓN ENTRAR */
-.buttonIn{ 
+/* BOTÓN PRIMARIO */
+#buttonIn{ 
     font-family: 'Eczar', serif;
     font-size: 20px;
     font-weight: 600;
@@ -147,10 +145,11 @@ nav a:hover{
     padding: 0 20px;
 }
 
-  .buttonIn::after{
+#buttonIn::after{
     content: "";
     background-color: #D2A03A;
     position: absolute;
+    border: none;
     top: -5px;
     right: -5px;
     left: -5px;
@@ -159,34 +158,46 @@ nav a:hover{
     z-index: -1;
 }
 
-/* TARJETA PERSONAJES */
-.col{
-    flex-wrap: wrap;
+/* PANTALLA PRINCIPAL*/
+/* Body */
+#principalScreen{
+    width: 100%;
+    height: auto;
 }
+/* Contenedor padre */
+.col{
+    width: 100%;
+    height: auto;
+    margin: 0 40px;
+}
+.grid{
+    width: 100%;
+    flex-direction: row;
+    /*justify-content: space-around;*/
+}
+/* Tarjeta Personajes */
 .card{
-   width: 50%; 
+   width: 40%; 
    height: 260px;
    background: #061130;
    border-radius: 6px;
-   display: inline-flex;
-   margin: 20px;
+   margin: 5px;
+   contain: content;
+   display: inline-block;
 }
 #nameCharacter{
     font-family: 'Eczar', serif;
     font-size: 21px;
     color: #ffffff;
     text-decoration: underline #D2A03A ;
-    box-sizing: border-box;
+
 }
 .img-card{
-    float: right;
+    height: inherit;
+    max-width: 100%;
 }
-/*
 
+/*
     font-family: 'Eczar', serif;
     font-family: 'Montserrat', sans-serif;
-
-    button:active {
-    background: #C6C6C6;
-  }
-}*/
+*/
