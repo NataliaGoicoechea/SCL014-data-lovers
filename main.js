@@ -11,6 +11,7 @@ function showPrincipalScreen() {
   document.getElementById('welcome').classList.add('not-visible');
   document.getElementById('principalScreen').classList.remove('not-visible');
   document.getElementById('header').classList.remove('not-visible');
+  document.getElementById('footer').classList.remove('not-visible');
 }
 
 /* Buscador
@@ -31,17 +32,26 @@ function showCharacters() {
     characters = 
       `<div style='display:flex;margin:0px;width:100%'>
         <div style='width:50%;height:100%;text-align:center'>
-          <h3 id='nameCharacter'>${data[i].name}</h3>
-          <div>
-            <p><img class="icon" src="images/hat.svg">Casa de Estudios</p>
+          <h3 id='nameCharacter'>${data[i].name} <hr></h3>
+          <div class='box-icon'>
+            <div>
+            <img class="icon" src="images/hat.svg">
+            <p>Casa de Estudios</p>
+            </div>
+            <div>
             <img class="icon" src="images/smoke.svg">
+            <p>Patronus</p>
+            </div>
+            <div>
             <img class="icon" src="images/magic.svg">
+            <p>Varita</p>
+            </div>
           </div>
           <div>
           <button class='buttonIn' id='buttonIn'>Descubre más</button>
           </div>
         </div>
-        <div style='width:50%;heigth:auto'>
+        <div id='img-card'>
         <img class='img-card' src='${data[i].image}'>
         </div>
       </div>`;

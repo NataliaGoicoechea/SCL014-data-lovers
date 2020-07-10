@@ -37,6 +37,7 @@ header{
 }
 nav{
     display: inline-block;
+    margin-top: 18px;
 }
 nav li{
     display: inline;
@@ -54,7 +55,7 @@ nav a:hover{
 }
 /* Logo PotterLand */
 .logo{
-    margin: 0 auto;
+    margin: 15px 0px 5px 40px;
     width: 15%;
     height: auto;
 }
@@ -63,6 +64,7 @@ nav a:hover{
 }
 /* Buscador */
 .search{
+    margin: 40px 40px 5px 5px;
     float: right;
 
 }
@@ -129,6 +131,7 @@ nav a:hover{
     padding: 8px;
     border-radius: 8px;
     font-size: 18px;
+    margin-bottom: 20px;
 }
 
 /* BOTÓN PRIMARIO */
@@ -136,11 +139,25 @@ nav a:hover{
     font-family: 'Eczar', serif;
     font-size: 20px;
     font-weight: 600;
+    border: none;
     color: #061130;
     background-color: #D2A03A;
+    border: 1px solid #061130;
     border-radius: 6px;
     margin: 0 auto;
-    margin-top: 20px;
+    position: relative;
+    padding: 0 20px;
+}
+#buttonIn:hover{ 
+    font-family: 'Eczar', serif;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    color: #ffffff;
+    background-color: #D2A03A;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    margin: 0 auto;
     position: relative;
     padding: 0 20px;
 }
@@ -188,14 +205,40 @@ nav a:hover{
 #nameCharacter{
     font-family: 'Eczar', serif;
     font-size: 21px;
+    font-weight: 400;
     color: #ffffff;
-    text-decoration: underline #D2A03A ;
-
+    margin-top: 15px;
+}
+hr{
+    border: 1px solid #D2A03A;
+    max-width: 100px;
+    text-align: center;
+    margin: 0px auto;
 }
 .img-card{
     height: inherit;
     max-width: 100%;
 }
+#img-card{
+    width:50%;heigth:auto
+}
+.box-icon{
+    width: 100%;
+    margin: 10px 5px;
+    text-align: center;
+    display: flex;
+}
+.box-icon p{
+    font-size: 12px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.icon{
+    width: 60%;
+    height: auto;
+    margin: 0px 10px;
+}
+
 
 /*
     font-family: 'Eczar', serif;
