@@ -19,7 +19,7 @@ export default [
     hogwartsStaff: false,
     actor: 'Daniel Radcliffe',
     alive: true,
-    image: 'http://hp-api.herokuapp.com/images/harry.jpg',
+    image: 'images/Logo-Harry.png',
   },
   {
     name: 'Hermione Granger',

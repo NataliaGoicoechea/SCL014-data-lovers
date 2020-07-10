@@ -21,7 +21,7 @@ document.getElementById('search').onclick = function buscador() {
 }; */
 
 // Variable que muestra todos los personajes en la página principal
-const allCharacters = document.getElementById('root'); // llamando al ID del html dentro d ela variable allcharacters
+const allCharacters = document.getElementById('grid'); // llamando al ID del html dentro d ela variable allcharacters
 function showCharacters() {
   let characters = ''; // declarando variable de tipo string
   for (let i = 0; i < data.length; i++) {
@@ -29,12 +29,33 @@ function showCharacters() {
     allCharacters.appendChild(card); // card es el hijo de allcharacters
     card.setAttribute('class', 'card'); // le estamos añadiendo un atributo class a article ,luego html dinámico, se esta concatenando la data con los elementos html
     characters = 
-        `<div class='card container'>
-        <p class='' id='nameCharacter'>${data[i].name}</p>
-        <p>Patronus: ${data[i].patronus} </p>
+      `<div style='display:flex;margin:0px;width:100%'>
+        <div style='width:50%;height:100%;text-align:center'>
+          <h3 id='nameCharacter'>${data[i].name}</h3>
+          <div>
+            <p><img class="icon" src="images/hat.svg">Casa de Estudios</p>
+            <img class="icon" src="images/smoke.svg">
+            <img class="icon" src="images/magic.svg">
+          </div>
+          <div>
+          <button class='buttonIn' id='buttonIn'>Descubre más</button>
+          </div>
+        </div>
+        <div style='width:50%;heigth:auto'>
         <img class='img-card' src='${data[i].image}'>
-        <button class='buttonIn' id=''>Descubre más</button>
-        </div>`;
+        </div>
+      </div>`;
+
+    /*    `<div style='display:flex;margin:0px;width:100%'>
+        <div style='width:50%;height:100%;text-align:center'>
+        <p class='' id='nameCharacter'>${data[i].name}</p>
+        <p>Patronus ${data[i].patronus} </p>
+        <button class='buttonIn' id='buttonIn'>Descubre más</button>
+        </div>
+        <div style='width:50%;heigth:auto'>
+        <img class='img-card' src='${data[i].image}'>
+        </div>
+        </div>`;*/
         card.innerHTML = characters;
         // card.appendChild(characters); // estamos imprimiendo en html nuestro card que contiene la variable personajes
   }
