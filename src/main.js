@@ -29,9 +29,12 @@ function showCharacters() {
     allCharacters.appendChild(card); // card es el hijo de allcharacters
     card.setAttribute('class', 'card'); // le estamos añadiendo un atributo class a article ,luego html dinámico, se esta concatenando la data con los elementos html
     characters = 
-        `<p class='' id=''>hola ${data[i].name}</p>
-         <p>Patronus: ${data[i].patronus} </p>
-         <img src='${data[i].image}'>`;
+        `<div class='card container'>
+        <p class='' id='nameCharacter'>${data[i].name}</p>
+        <p>Patronus: ${data[i].patronus} </p>
+        <img class='img-card' src='${data[i].image}'>
+        <button class='buttonIn' id=''>Descubre más</button>
+        </div>`;
         card.innerHTML = characters;
         // card.appendChild(characters); // estamos imprimiendo en html nuestro card que contiene la variable personajes
   }
