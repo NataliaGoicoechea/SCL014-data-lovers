@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PotterLand</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css"/>
@@ -41,14 +42,15 @@
       </div>
     </section>
   <!--Pantalla Principal-->
-    <main id="principalScreen" class="not-visible">
+    <main id="principalScreen" class="principalScreen not-visible">
       <!--Sección Personajes-->
       <section class='col' id="root">
-        <h2>Personajes de Harry Potter</h2>
-        <p>Bienvenidx a PotterLand <span id="showName"></span></p>
+        <div class="tittle-user">
+          <h2>Personajes de Harry Potter</h2>
+          <p>Bienvenidx a PotterLand <strong><span id="showName"></span></strong></p>
+      </div>
         <!--Filtro-->
-        <section>
-          <label for="">Filtrar por:</label>
+         <label for="">Filtrar por:</label>
           <select name="" id="">
             <option value="all">Todos</option>
             <option value="az">De la A a la Z</option>
@@ -56,9 +58,9 @@
             <option value="patronus">Patronus</option>
             <option value="wands">Varitas</option>
           </select>
-          <section class="grid" id="grid">
-          </section>
-        </section>
+          <div class="grid" id="grid">
+          </div>
+       
       </section>
       <!--Sección Tips del juego-->
       <section class="" id=""></section>
@@ -70,7 +72,7 @@
 <!--Footer-->
     <footer class="not-visible" id="footer">
       <div class="footer">
-        <div>
+        <div class="width-logo">
           <img class="footer-logo" src="images/Logo-Harry.png" alt="Logo de Potterland">
         </div>
         <div class="site-map">
@@ -81,14 +83,14 @@
               <li><a href=""> <img src="images/stars.svg" alt=""> ¿Sabías qué?</a></li>
             </ul>
         </div>
-        <div>
+        <div class="store">
           <section> 
-            <a href=""><p>Descarga Wizards Unite en tu móvil</p></a>
+           <p>Descarga Wizards Unite en tu móvil</p>
+           <br>
             <a href="https://play.google.com/store/apps/details?id=com.nianticlabs.hpwu.prod&hl=es_CL" target="_blank"><img class="img-footer" src="images/Google-play.png" alt="Link descarga Google Play"></a>
             <a href="https://apps.apple.com/us/app/harry-potter-wizards-unite/id1452352832" target="_blank"><img class="img-footer" src="images/App-store.png" alt="Link descarga App Store"></a>
           </section>
         </div>
-        <p>©2020 PotterLand - Todos los derechos reservados.</p>
       </div>
     </footer>
  <script src="main.js" type="module"></script>
