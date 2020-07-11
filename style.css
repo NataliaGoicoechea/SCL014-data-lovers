@@ -1,6 +1,7 @@
-* {
-    box-sizing: border-box;
-  }
+html {
+  scroll-behavior: smooth; /* Darle suavidad al momento de moverse*/
+}
+
 /* Función no mostrar */
 .not-visible {
     display: none;
@@ -10,13 +11,6 @@
     text-align: center;
 }
 
-/* CAJA PADRE */
-.container{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
 /* BODY */
 body{
     margin: 0px;
@@ -24,6 +18,7 @@ body{
     height: auto;
     font-family: 'Montserrat', sans-serif;
     background-color: #3E3E3E;
+    overflow-x: hidden;
 }
 
 /* HEADER */
@@ -49,7 +44,7 @@ nav a{
     color: #D2A03A;
     text-decoration: none;
     font-family: 'Eczar', serif;
-    font-size: 21px;
+    font-size: 18px;
     padding: 15px;
 }
 nav a:hover{
@@ -180,30 +175,46 @@ nav a:hover{
 
 /* PANTALLA PRINCIPAL*/
 /* Body */
-#principalScreen{
+.principalScreen{
     width: 100%;
-    height: auto;
+}
+.principalScreen h2{
+    font-family: 'Eczar', serif;
+    font-size: 26px;
+    color: white;
+    text-align: center;
 }
 /* Contenedor padre */
 .col{
     width: 100%;
     height: auto;
-    margin: 0 40px;
 }
 .grid{
     width: 100%;
-    flex-direction: row;
-    /*justify-content: space-around;*/
+    max-width: 1440px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+/* Titulo y user*/
+.tittle-user{
+    display: flex;
+}
+.tittle-user p{
+    float: right;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
 }
 /* Tarjeta Personajes */
 .card{
-   width: 40%; 
-   height: 260px;
-   background: #061130;
-   border-radius: 6px;
-   margin: 5px;
-   contain: content;
-   display: inline-block;
+    width: 40%;
+    max-height: 260px;
+    background: #061130;
+    border-radius: 6px;
+    margin: 15px;
+    contain: content;
+    display: inline-block;
 }
 #nameCharacter{
     font-family: 'Eczar', serif;
@@ -223,7 +234,7 @@ hr{
     max-width: 100%;
 }
 #img-card{
-    width:50%;heigth:auto
+    width:50%;
 }
 .box-icon{
     width: 100%;
@@ -246,50 +257,56 @@ hr{
 footer{
     background-color: #04031F;
     width: 100%;
-    display: inline-block;
+    display: flex;
 }
 footer p{
     color: white;
 }
 .footer{
     margin: 15px 40px;
+    display: flex;
+}
+.width-logo{
+    width: 33%;
 }
 .footer-logo{
-    margin: 25px 0px 25px 40px;
-    width: 20%;
+    margin: 0px;
+    width: 50%;
     height: auto;
 }
 .img-footer{
-    max-width: 15%;
+    max-width: 30%;
+    height: auto;
+}
+.site-map{
+    width: 33%;
+}
+.site-map ul{
+    flex-wrap: wrap;
 }
 .site-map li{
-    display: inline-block;
-}
-.site-map ul {
+    flex-wrap: wrap;
     display: flex;
+}
+.site-map img{
+    width: 6%;
+    height: auto;
 }
 .site-map a{
     color: white;
-    text-decoration: none;
     font-family: 'Eczar', serif;
-    font-size: 21px;
-    font-weight: 400;
-    padding: 15px;
+    font-size: 16px;
+    font-weight: lighter;
 }
-.site-map img{
-    width: 4%;
-    height: auto;
+.site-map a:hover{
+    color: #D2A03A;
+    font-family: 'Eczar', serif;
+    font-size: 16px;
+    font-weight: lighter;
 }
-
-/* RESPONSIVE */
-@media screen and (max-width: 600px) {
-    .card {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
-
+.store{
+    width: 33%;
+}
 
 /*
     font-family: 'Eczar', serif;
