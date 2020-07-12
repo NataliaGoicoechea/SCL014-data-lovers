@@ -17,8 +17,9 @@ body{
     width: 100%;
     height: auto;
     font-family: 'Montserrat', sans-serif;
-    background-color: #3E3E3E;
+    background-color: #292929;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 /* HEADER */
@@ -145,6 +146,7 @@ nav a:hover{
     margin: 0 auto;
     position: relative;
     padding: 0 20px;
+    transition: all .8s;
 }
 #buttonIn:hover{ 
     font-family: 'Eczar', serif;
@@ -158,6 +160,8 @@ nav a:hover{
     margin: 0 auto;
     position: relative;
     padding: 0 20px;
+    cursor: pointer;
+    transition: all .2s;
 }
 
 #buttonIn::after{
@@ -199,6 +203,7 @@ nav a:hover{
 /* Titulo y user*/
 .tittle-user{
     display: flex;
+    margin-bottom: 20px;
 }
 .tittle-user p{
     float: right;
@@ -206,7 +211,25 @@ nav a:hover{
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
 }
+.tittle-user img{
+    width: 2%;
+    height: auto;
+}
 /* Tarjeta Personajes */
+.shield{
+    width: 50px;
+    height: auto;
+    max-width: 50px;
+    float: inline-start;
+    text-align: center;
+    display: flex;
+   /* box-shadow: 6px 11px 21px -1px rgba(0,0,0,0.62);*/
+}
+.border{
+    border: 1px solid #ffffff;
+    margin: 10px;
+    display: flex;
+}
 .card{
     width: 40%;
     max-height: 260px;
@@ -214,17 +237,23 @@ nav a:hover{
     border-radius: 6px;
     margin: 15px;
     contain: content;
-    display: inline-block;
+    display: flex;
+    transition: all .2s;
+    box-shadow: 6px 11px 21px -1px rgba(0,0,0,0.4);
+}
+.card:hover{
+    transform: scale(1.06);
+    transition: all .2s;
 }
 #nameCharacter{
     font-family: 'Eczar', serif;
-    font-size: 21px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: bold;
     color: #ffffff;
     margin-top: 15px;
 }
 hr{
-    border: 1px solid #D2A03A;
+    border: 0.5px solid #D2A03A;
     max-width: 100px;
     text-align: center;
     margin: 0px auto;
@@ -232,9 +261,11 @@ hr{
 .img-card{
     height: inherit;
     max-width: 100%;
+    object-fit: cover;
 }
 #img-card{
     width:50%;
+    display: flex;
 }
 .box-icon{
     width: 100%;
@@ -258,6 +289,7 @@ footer{
     background-color: #04031F;
     width: 100%;
     display: flex;
+    margin-top: 50px;
 }
 footer p{
     color: white;
@@ -307,8 +339,3 @@ footer p{
 .store{
     width: 33%;
 }
-
-/*
-    font-family: 'Eczar', serif;
-    font-family: 'Montserrat', sans-serif;
-*/

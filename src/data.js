@@ -1,3 +1,9 @@
-// estas funciones son de ejemplo
-// export const characters = () => 'characters';
+let filterHouseData() = ;
+
+
+
+
+
+
+export const characters = () => 'characters';
 // export const anotherExample = () => 'OMG';
