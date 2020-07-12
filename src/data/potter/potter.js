@@ -137,7 +137,7 @@ export default [
     hairColour: 'brown',
     wand: {
       wood: 'Ash',
-      core: 'Unicorn Hair',
+      core: 'Unicorn Tail-hair',
       length: 12.25,
     },
     patronus: '',
@@ -180,9 +180,9 @@ export default [
     eyeColour: 'black',
     hairColour: 'black',
     wand: {
-      wood: '',
-      core: '',
-      length: '',
+      wood: 'black pine',
+      core: 'Dragon Heartstring',
+      length: '11.8',
     },
     patronus: 'Doe',
     hogwartsStudent: false,
