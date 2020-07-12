@@ -82,10 +82,11 @@ const showCharacters = (data) => {
 // Selecciona caja de opciones y al momento en que cambia ejecuta una función de filtro.
 document.getElementById('selectbox').onchange = function () {
 
-//selecciona el valor seleccionado en las opciones de la caja.
+  //selecciona el valor seleccionado en las opciones de la caja.
   let selection = document.getElementById('selectbox').value;
   //deja por defecto sin estar visible la caja de selección de casas.
   document.getElementById('houseFilter').classList.add('not-visible');
+  document.getElementById('wandsFilter').classList.add('not-visible');
   document.getElementById('houseFilterSelect').value = 'all';
 
   //Si se selecciona "All"
@@ -101,11 +102,11 @@ document.getElementById('selectbox').onchange = function () {
     //Crea grilla vacía para reordenar elementos
     document.getElementById('grid').innerHTML = '';
     //Llama a la función y le envía toda la data con un sort de a a-z
-    showCharacters(allData.sort((a, z)=>{
+    showCharacters(allData.sort((a, z) => {
       //la función devuelve una comparación entre un elemento y otro, si uno es mayor devuelve un 1
       //y si es menor devuelve un -1 (es un if, else resumido llamado operador ternario). Asi va ordenado
       //comparando dos elementos para ir dejando los menores (mas cercanos a z) al final.
-      return (a.name > z.name) ? 1: -1;
+      return (a.name > z.name) ? 1 : -1;
     }));
   }
 
@@ -120,45 +121,63 @@ document.getElementById('selectbox').onchange = function () {
       //Filtra la data denominada "HarryPotter" seleccionando la casa e incluyendo la variable de 
       // de la casa seleccionada (SelectionHouse) y lo guarda en SelectedHouse
       let selectedHouse = allData.filter(harryPotter => harryPotter.house.includes(selectionHouse));
-      //Crea grilla vacía para reordenar elementos
-      document.getElementById('grid').innerHTML = '';
-      //Llama a la función para mostrar los datos y le envía el valor filtrado.
-      showCharacters(selectedHouse);
+      let allHouses = allData.filter(harryPotter => harryPotter.house);
+
+      if (selectionHouse != 'all') {
+        //Crea grilla vacía para reordenar elementos
+        document.getElementById('grid').innerHTML = '';
+        //Llama a la función para mostrar los datos y le envía el valor filtrado.
+        showCharacters(selectedHouse);
+      } else {
+        //Crea grilla vacía para reordenar elementos
+        document.getElementById('grid').innerHTML = '';
+        //Muetra los personajes según el filtro de varitas.
+        showCharacters(allHouses);
+      }
     }
-  } 
+  }
   //Si se selecciona Patronus
   else if (selection == 'patronus') {
     //Filtra solo los objetos que tengan el valor Patronus con algún animal
     let patronus = allData.filter(harryPotter => harryPotter.patronus);
     //Crea grilla vacía para reordenar elementos
-      document.getElementById('grid').innerHTML = '';
-      //llama a la función para mostrar los datos filtrando por patronus.
-      showCharacters(patronus);
+    document.getElementById('grid').innerHTML = '';
+    //llama a la función para mostrar los datos filtrando por patronus.
+    showCharacters(patronus);
 
   }
   //SI se selecciona Varitas
-  else if (selection == 'theWands') { 
-    document.getElementById('houseFilter').classList.add('not-visible');
-    document.getElementById('wands').classList.remove('not-visible');
+  else if (selection == 'wands') {
+    document.getElementById('wandsFilter').classList.remove('not-visible');
+
     document.getElementById('selectWand').onchange = function () {
-    let selectWand = document.getElementById('selectWand').value;
-    
+      let selectWand = document.getElementById('selectWand').value;
+
       //Filtra solo los objetos que tengan varitas, pero como todos los personas tienen mas caracteristicas 
-    //dentro de varias, entonces aparecía que todos tenían varitas (hasta el gato), entonces se debe seleccionar
-    //un elemento interno de varitas (madera en este caso), si está vacío no muestra al personaje, ya que todo
-    //personaje que tenga varita tendrá de un tipo de madera. 
-    let wands = allData.filter(harryPotter => harryPotter.wand.core.includes(wands));
+      //dentro de varias, entonces aparecía que todos tenían varitas (hasta el gato), entonces se debe seleccionar
+      //un elemento interno de varitas (madera en este caso), si está vacío no muestra al personaje, ya que todo
+      //personaje que tenga varita tendrá de un tipo de madera. 
+      let allwandsCore = allData.filter(harryPotter => harryPotter.wand.core);
+      let allwandsWood = allData.filter(harryPotter => harryPotter.wand.wood);
 
-      //Crea grilla vacía para reordenar elementos
-      document.getElementById('grid').innerHTML = '';
-      //Muetra los personajes según el filtro de varitas.
-      showCharacters(wands);
+      let allwandsCharacters = allwandsWood.concat(allwandsCore);
+      let allwandsCharactersNoRepeat = allwandsCharacters.filter((item, pos) => allwandsCharacters.indexOf(item) === pos);
+
+      let wands = allData.filter(harryPotter => harryPotter.wand.core.includes(selectWand));
+
+      if (selectWand != 'all') {
+        //Crea grilla vacía para reordenar elementos
+        document.getElementById('grid').innerHTML = '';
+        //Muetra los personajes según el filtro de varitas.
+        showCharacters(wands);
+      } else {
+        //Crea grilla vacía para reordenar elementos
+        document.getElementById('grid').innerHTML = '';
+        //Muetra los personajes según el filtro de varitas.
+        showCharacters(allwandsCharactersNoRepeat);
+      }
     }
-    
-      
-
   }
-
 };
 
 
