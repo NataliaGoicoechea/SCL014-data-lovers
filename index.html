@@ -4,32 +4,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PotterLand</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;600&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="container">
-    <!--Header-->
+    <!--HEADER-->
     <header id="header" class="not-visible">
+      <!--Logo-->
       <img class="logo" src="images/Logo-Harry.png" alt="Logo de Potterland">
+      <!--Nav-->
       <div class="menu">
       <nav class="">
         <ul>
-          <li><a href=""> Personajes</a></li>
-          <li><a href=""> Tips del juego</a></li>
-          <li><a href=""> Hechizos</a></li>
-          <li><a href=""> ¿Sabías qué?</a></li>
+          <li><a href="#"> Personajes</a></li>
+          <li><a href="#"> Tips del juego</a></li>
+          <li><a href="#"> Hechizos</a></li>
+          <li><a href="#"> ¿Sabías qué?</a></li>
         </ul>
-      </nav>  
+      </nav> 
+      <!--Buscador--> 
       <section class="search" >
         <input type='search' id='search-container' placeholder='Buscar...'>
-        <input type='button' id='search' value='Ir'>
+       <!--<input type='button' id='search' value='Ir'> --> 
        <!-- <img src="" alt="">--> 
       </section>
     </div>
     </header>
-    <!--Pantalla Bienvenida-->
+    <!--PANTALLA BIENVENIDA-->
     <section id="welcome" class="welcome">
       <div class="sign-in text-center">
         <img class="logo-welcome" src="images/Logo-Harry.png" alt="Logo de Potterland">
@@ -46,8 +48,9 @@
       <!--Sección Personajes-->
       <section class='col' id="root">
         <div class="tittle-user">
-          <h2>Personajes de Harry Potter</h2>
           <p>Bienvenidx a PotterLand <strong><span id="showName"></span></strong></p>
+          <h2>Personajes de Harry Potter</h2>
+          <img src="images/stars.svg" alt="">
       </div>
         <!--Filtro-->
          <label for="">Filtrar por:</label>
