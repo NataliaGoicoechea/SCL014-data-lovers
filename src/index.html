@@ -1,69 +1,87 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PotterLand</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;600&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="container">
-    <!--HEADER-->
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>PotterLand</title>
+   <link rel="stylesheet" href="style.css" />
+   <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;600&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+ </head>
+<body>
+  <div>
+    <!--Header-->
     <header id="header" class="not-visible">
-      <!--Logo-->
       <img class="logo" src="images/Logo-Harry.png" alt="Logo de Potterland">
-      <!--Nav-->
-      <div class="menu">
-      <nav class="">
-        <ul>
-          <li><a href="#"> Personajes</a></li>
-          <li><a href="#"> Tips del juego</a></li>
-          <li><a href="#"> Hechizos</a></li>
-          <li><a href="#"> ¿Sabías qué?</a></li>
-        </ul>
-      </nav> 
-      <!--Buscador--> 
-      <section class="search" >
-        <input type='search' id='search-container' placeholder='Buscar...'>
-       <!--<input type='button' id='search' value='Ir'> --> 
-       <!-- <img src="" alt="">--> 
-      </section>
-    </div>
+        <div class="menu">
+          <nav class="">
+            <ul>
+              <li><a href=""> Personajes</a></li>
+              <li><a href=""> Tips del juego</a></li>
+              <li><a href=""> Hechizos</a></li>
+              <li><a href=""> ¿Sabías qué?</a></li>
+            </ul>
+          </nav>
+          <section class="search">
+            <input type='search' id='search-container' placeholder='Buscar...'>
+            <input type='button' id='search' value='Ir'>
+          </section>
+        </div>
     </header>
-    <!--PANTALLA BIENVENIDA-->
+    <!--Pantalla Bienvenida-->
     <section id="welcome" class="welcome">
       <div class="sign-in text-center">
         <img class="logo-welcome" src="images/Logo-Harry.png" alt="Logo de Potterland">
         <h2>Bienvenido(a)s Brujas y Magos </h2>
         <p> a <strong>PotterLand</strong> el lugar donde podrás acceder a toda la magia y misterio del mundo de <strong>HarryPotter</strong>.</p>
-        <div class="user">
-          <input type="text" class="input" id="name" placeholder="Ingresa tu Nombre">
-          <button id="buttonIn" class="">Entrar</button>
-        </div>
+          <div class="user">
+            <input type="text" class="input" id="name" placeholder="Ingresa tu Nombre">
+            <button id="buttonIn" class="">Entrar</button>
+          </div>
       </div>
     </section>
-  <!--Pantalla Principal-->
+    <!--Pantalla Principal-->
     <main id="principalScreen" class="principalScreen not-visible">
       <!--Sección Personajes-->
-      <section class='col' id="root">
+      <section class='' id="root">
         <div class="tittle-user">
-          <p>Bienvenidx a PotterLand <strong><span id="showName"></span></strong></p>
           <h2>Personajes de Harry Potter</h2>
-          <img src="images/stars.svg" alt="">
-      </div>
-        <!--Filtro-->
-         <label for="">Filtrar por:</label>
-          <select name="" id="">
+          <p>Bienvenidx a PotterLand <strong><span id="showName"></span></strong></p>
+        </div>
+        <!--Filtros-->
+        <div class="filter">
+          <label>Filtrar por:</label>
+          <select name="" id="selectbox">
             <option value="all">Todos</option>
             <option value="az">De la A a la Z</option>
             <option value="studyHouse">Casa de Estudios</option>
             <option value="patronus">Patronus</option>
             <option value="wands">Varitas</option>
           </select>
-          <div class="grid" id="grid">
+          <!--Segundo filtro - Casa de estudios-->
+          <div id="houseFilter" class="not-visible">
+            <label>Casa de estudios:</label>
+            <select name="" id="houseFilterSelect">
+              <option value="all">Todos</option>
+              <option value="Gryffindor">Gryffindor</option>
+              <option value="Slytherin">Slytherin</option>
+              <option value="Hufflepuff">Hufflepuff</option>
+              <option value="Ravenclaw">Ravenclaw</option>
+            </select>
           </div>
-       
+          <!--Segundo filtro - varitas-->
+          <div id="wandsFilter" class="not-visible">
+            <label>Varitas:</label>
+            <select name="" id="selectWand">
+              <option value="all">Todos</option>
+              <option value="Phoenix Feather">Pluma de Fénix</option>
+              <option value="Dragon Heartstring">Fibra de Corazón de Dragon</option>
+              <option value="Unicorn Tail-hair">Pelo de cola de Unicornio</option>
+              <option value="Thestral Tail hair">Pelo de cola de Thestral</option>
+            </select>
+          </div>
+        </div>
+        <div class="grid" id="grid"> <!-- Div donde se muestran los personajes-->
+        </div>
       </section>
       <!--Sección Tips del juego-->
       <section class="" id=""></section>
@@ -72,31 +90,34 @@
       <!--Sección Sabías qué-->
       <section class="" id=""></section>
     </main>
-<!--Footer-->
+    <!--Footer-->
     <footer class="not-visible" id="footer">
       <div class="footer">
         <div class="width-logo">
           <img class="footer-logo" src="images/Logo-Harry.png" alt="Logo de Potterland">
         </div>
         <div class="site-map">
-            <ul>
-              <li><a href=""> <img src="images/stars.svg" alt=""> Personajes</a></li>
-              <li><a href=""> <img src="images/stars.svg" alt=""> Tips del juego</a></li>
-              <li><a href=""> <img src="images/stars.svg" alt=""> Hechizos</a></li>
-              <li><a href=""> <img src="images/stars.svg" alt=""> ¿Sabías qué?</a></li>
-            </ul>
+          <ul>
+            <li><a href=""> <img src="images/stars.svg" alt=""> Personajes</a></li>
+            <li><a href=""> <img src="images/stars.svg" alt=""> Tips del juego</a></li>
+            <li><a href=""> <img src="images/stars.svg" alt=""> Hechizos</a></li>
+            <li><a href=""> <img src="images/stars.svg" alt=""> ¿Sabías qué?</a></li>
+          </ul>
         </div>
         <div class="store">
-          <section> 
-           <p>Descarga Wizards Unite en tu móvil</p>
-           <br>
-            <a href="https://play.google.com/store/apps/details?id=com.nianticlabs.hpwu.prod&hl=es_CL" target="_blank"><img class="img-footer" src="images/Google-play.png" alt="Link descarga Google Play"></a>
-            <a href="https://apps.apple.com/us/app/harry-potter-wizards-unite/id1452352832" target="_blank"><img class="img-footer" src="images/App-store.png" alt="Link descarga App Store"></a>
+          <section>
+            <p>Descarga Wizards Unite en tu móvil</p>
+            <br>
+            <a href="https://play.google.com/store/apps/details?id=com.nianticlabs.hpwu.prod&hl=es_CL"
+              target="_blank"><img class="img-footer" src="images/Google-play.png" alt="Link descarga Google Play"></a>
+            <a href="https://apps.apple.com/us/app/harry-potter-wizards-unite/id1452352832" target="_blank"><img
+                class="img-footer" src="images/App-store.png" alt="Link descarga App Store"></a>
           </section>
         </div>
       </div>
     </footer>
- <script src="main.js" type="module"></script>
-</div>
+    <script src="main.js" type="module"></script>
+  </div>
 </body>
+
 </html>
