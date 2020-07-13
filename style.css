@@ -182,53 +182,51 @@ nav a:hover{
 .principalScreen{
     width: 100%;
 }
-.principalScreen h2{
-    font-family: 'Eczar', serif;
-    font-size: 26px;
-    color: white;
-    text-align: center;
-}
 /* Contenedor padre */
-.col{
-    width: 100%;
-    height: auto;
-}
 .grid{
     width: 100%;
     max-width: 1440px;
     display: flex;
     flex-flow: wrap;
     justify-content: center;
+    margin-top: 20px;
 }
 /* Titulo y user*/
 .tittle-user{
-    display: flex;
-    margin-bottom: 20px;
+    display: block;
+    margin: 0px 40px;
+}
+.principalScreen h2{
+    font-family: 'Eczar', serif;
+    font-size: 26px;
+    color: white;
+    text-align: center;
 }
 .tittle-user p{
-    float: right;
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+    float: right;
+    margin-top: -55px;
 }
-.tittle-user img{
-    width: 2%;
-    height: auto;
+/* FILTROS*/
+.filter{
+    margin-left: 40px;
+    display: flex;
+}
+label{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0px 10px 0px 10px;
 }
 /* Tarjeta Personajes */
 .shield{
-    width: 50px;
-    height: auto;
     max-width: 50px;
-    float: inline-start;
-    text-align: center;
-    display: flex;
-   /* box-shadow: 6px 11px 21px -1px rgba(0,0,0,0.62);*/
-}
-.border{
-    border: 1px solid #ffffff;
-    margin: 10px;
-    display: flex;
+    position: absolute;
+    margin-left: 45%;
+    margin-top: -3%;
 }
 .card{
     width: 40%;
@@ -236,13 +234,13 @@ nav a:hover{
     background: #061130;
     border-radius: 6px;
     margin: 15px;
-    contain: content;
+    contain: layout;
     display: flex;
     transition: all .2s;
     box-shadow: 6px 11px 21px -1px rgba(0,0,0,0.4);
 }
 .card:hover{
-    transform: scale(1.06);
+    transform: scale(1.05);
     transition: all .2s;
 }
 #nameCharacter{
@@ -258,14 +256,15 @@ hr{
     text-align: center;
     margin: 0px auto;
 }
+#img-card{
+    width:50%;
+    display: flex;
+}
 .img-card{
     height: inherit;
     max-width: 100%;
     object-fit: cover;
-}
-#img-card{
-    width:50%;
-    display: flex;
+    border-radius: 0px 6px 6px 0px;
 }
 .box-icon{
     width: 100%;
@@ -274,7 +273,7 @@ hr{
     display: flex;
 }
 .box-icon p{
-    font-size: 12px;
+    font-size: 10px;
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
