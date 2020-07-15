@@ -1,7 +1,6 @@
 html {
   scroll-behavior: smooth; /* Darle suavidad al momento de moverse*/
 }
-
 /* Función no mostrar */
 .not-visible {
     display: none;
@@ -10,33 +9,33 @@ html {
 .text-center{
     text-align: center;
 }
-
 /* BODY */
 body{
     margin: 0px;
     width: 100%;
     height: auto;
     font-family: 'Montserrat', sans-serif;
-    background-color: #292929;
-    overflow-x: hidden;
+    background-color: #1d1d1d;
     box-sizing: border-box;
+    display: flex;
 }
-
 /* HEADER */
 header{
-    margin: 0;
-    background-color: #04031F;
+    background-color: #0f0f0f;
     width: 100%;
-    height: 100px;
-    align-self: center;
+    height: 80px;
+    position: fixed;
+    padding: 0px 40px;
 }
 /* Nav */
-.menu{
-    float: right;
+.logo-nav-header{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 nav{
     display: inline-block;
-    margin-top: 18px;
+    margin-top: 8px;
 }
 nav li{
     display: inline;
@@ -54,20 +53,9 @@ nav a:hover{
 }
 /* Logo PotterLand */
 .logo{
-    margin: 15px 0px 5px 40px;
-    width: 15%;
+    width: 10%;
     height: auto;
 }
-.logo img{
-    float: left;
-}
-/* Buscador */
-.search{
-    margin: 40px 40px 5px 5px;
-    float: right;
-
-}
-
 /* PANTALLA BIENVENIDA */
 /* Background */
 .welcome{
@@ -128,15 +116,19 @@ nav a:hover{
 }
 .input{
     padding: 8px;
-    border-radius: 8px;
-    font-size: 18px;
+    border-radius: 5px;
+    font-size: 14px;
     margin-bottom: 20px;
+    border: none;
+}
+.input:focus{
+    outline: none;
 }
 
 /* BOTÓN PRIMARIO */
 #buttonIn{ 
     font-family: 'Eczar', serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     border: none;
     color: #061130;
@@ -150,7 +142,7 @@ nav a:hover{
 }
 #buttonIn:hover{ 
     font-family: 'Eczar', serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     border: none;
     color: #ffffff;
@@ -163,7 +155,9 @@ nav a:hover{
     cursor: pointer;
     transition: all .2s;
 }
-
+#buttonIn:focus{
+    outline: none;
+}
 #buttonIn::after{
     content: "";
     background-color: #D2A03A;
@@ -189,18 +183,19 @@ nav a:hover{
     display: flex;
     flex-flow: wrap;
     justify-content: center;
-    margin-top: 20px;
 }
 /* Titulo y user*/
 .tittle-user{
     display: block;
     margin: 0px 40px;
+    padding-top: 95px;
 }
 .principalScreen h2{
     font-family: 'Eczar', serif;
     font-size: 26px;
     color: white;
     text-align: center;
+    font-weight: 400;
 }
 .tittle-user p{
     color: white;
@@ -211,8 +206,13 @@ nav a:hover{
 }
 /* FILTROS*/
 .filter{
-    margin-left: 40px;
+    margin: 0px 0px 20px 40px;
     display: flex;
+    height: 20px;
+    font-size: 14px;
+}
+select:focus{
+    outline: none;
 }
 label{
     color: white;
@@ -220,7 +220,9 @@ label{
     font-size: 16px;
     font-weight: 300;
     margin: 0px 10px 0px 10px;
+    width: 100px;
 }
+
 /* Tarjeta Personajes */
 .shield{
     max-width: 50px;
@@ -229,9 +231,10 @@ label{
     margin-top: -3%;
 }
 .card{
+    position: relative;
     width: 40%;
     max-height: 260px;
-    background: #061130;
+    background: #080d1a;
     border-radius: 6px;
     margin: 15px;
     contain: layout;
@@ -242,6 +245,11 @@ label{
 .card:hover{
     transform: scale(1.05);
     transition: all .2s;
+}
+.card-left{
+    width: 50%;
+    height: 100%;
+    text-align: center;
 }
 #nameCharacter{
     font-family: 'Eczar', serif;
@@ -268,14 +276,19 @@ hr{
 }
 .box-icon{
     width: 100%;
-    margin: 10px 5px;
-    text-align: center;
+    margin-bottom: 15px;
     display: flex;
 }
 .box-icon p{
     font-size: 10px;
     color: white;
     font-family: 'Montserrat', sans-serif;
+}
+.font{
+    font-size: 14px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 .icon{
     width: 60%;
@@ -285,7 +298,7 @@ hr{
 
 /* FOOTER */
 footer{
-    background-color: #04031F;
+    background-color: #010016;
     width: 100%;
     display: flex;
     margin-top: 50px;
@@ -296,6 +309,7 @@ footer p{
 .footer{
     margin: 15px 40px;
     display: flex;
+    bottom: 0;
 }
 .width-logo{
     width: 33%;
