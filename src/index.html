@@ -2,7 +2,7 @@
 <html>
  <head>
    <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>PotterLand</title>
    <link rel="stylesheet" href="style.css" />
    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;600&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
@@ -11,9 +11,9 @@
   <div>
     <!--Header-->
     <header id="header" class="not-visible">
-      <img class="logo" src="images/Logo-Harry.png" alt="Logo de Potterland">
-        <div class="menu">
-          <nav class="">
+      <div class="logo-nav-header"> 
+        <img class="logo" src="images/Logo-Harry.png" alt="Logo de Potterland">
+            <nav class="">
             <ul>
               <li><a href=""> Personajes</a></li>
               <li><a href=""> Tips del juego</a></li>
@@ -25,7 +25,7 @@
             <input type='search' id='search-container' placeholder='Buscar...'>
             <input type='button' id='search' value='Ir'>
           </section>
-        </div>
+      </div> 
     </header>
     <!--Pantalla Bienvenida-->
     <section id="welcome" class="welcome">
@@ -54,7 +54,6 @@
             <option value="all">Todos</option>
             <option value="az">De la A a la Z</option>
             <option value="studyHouse">Casa de Estudios</option>
-            <option value="patronus">Patronus</option>
             <option value="wands">Varitas</option>
           </select>
           <!--Segundo filtro - Casa de estudios-->
@@ -71,7 +70,7 @@
           <!--Segundo filtro - varitas-->
           <div id="wandsFilter" class="not-visible">
             <label>Varitas:</label>
-            <select name="" id="selectWand">
+            <select name="" id="wandSelect">
               <option value="all">Todos</option>
               <option value="Phoenix Feather">Pluma de Fénix</option>
               <option value="Dragon Heartstring">Fibra de Corazón de Dragon</option>
@@ -80,7 +79,7 @@
             </select>
           </div>
         </div>
-        <div class="grid" id="grid"> <!-- Div donde se muestran los personajes-->
+        <div class="grid" id="grid" style=" overflow: hidden;"> <!-- Div donde se muestran los personajes en la pantalla principal-->
         </div>
       </section>
       <!--Sección Tips del juego-->

@@ -5,7 +5,7 @@
     "jest/globals": true
   },
   "extends": [
-    "airbnb-base"
+    "airbnb-base", "eslint:recommended"
   ],
   "plugins": ["jest"],
   "parserOptions": {
