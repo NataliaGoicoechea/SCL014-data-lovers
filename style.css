@@ -10,6 +10,10 @@ html {
     text-align: center;
 }
 /* BODY */
+/*Grid Sistem*/
+.container{
+    
+}
 body{
     margin: 0px;
     width: 100%;
@@ -26,6 +30,7 @@ header{
     height: 80px;
     position: fixed;
     padding: 0px 40px;
+    z-index: 1;
 }
 /* Nav */
 .logo-nav-header{
@@ -175,6 +180,7 @@ nav a:hover{
 /* Body */
 .principalScreen{
     width: 100%;
+    box-sizing: border-box;
 }
 /* Contenedor padre */
 .grid{
@@ -302,6 +308,8 @@ footer{
     width: 100%;
     display: flex;
     margin-top: 50px;
+    float: left;
+    box-sizing: border-box;
 }
 footer p{
     color: white;
@@ -352,3 +360,34 @@ footer p{
 .store{
     width: 33%;
 }
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 600px){
+    /* Body */
+.principalScreen{
+    width: 100%;
+    box-sizing: border-box;
+}
+.card{
+    position: relative;
+    width: 100%;
+    max-height: 260px;
+    background: #080d1a;
+    border-radius: 6px;
+    margin: 15px;
+    contain: layout;
+    display: flex;
+    transition: all .2s;
+    box-shadow: 6px 11px 21px -1px rgba(0,0,0,0.4);
+}
+.card:hover{
+    transform: scale(1.05);
+    transition: all .2s;
+}
+.card-left{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+} 
