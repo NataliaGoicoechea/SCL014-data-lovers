@@ -11,7 +11,7 @@
 * [7. Prototipos](#7-prototipos)
 * [8. Test de usuarios](#8-test-de-usuarios)
 * [9. Organización Trello](#9-organización-trello)
-* [10. Propuestas de mejoras](#10-propuestas-de-mejoras)
+* [10. Link Google Drive](#10-link-google-drive)
 
 
 
@@ -48,13 +48,11 @@ Como resultado se obtuvieron valiosas respuestas, las que se tomaron en cuenta p
 
 Link Encuesta-->(https://barbyfrancia.typeform.com/report/MexyARuS/6tc142pdomau3SA7)
 
-
 #### 2.3 Objetivos de usuario
 
 * El objetivo principal de nuestros usuarios, es que la aplicación sea informativa y muestre contenido sobre Harry Potter, como sus personajes,características, lugares, historias, pócimas, etc.
 * Otro de los objetivos que esperan nuestros usuarios, es encontrarse con una interfaz amigable, intuitiva y que los oriente a conocer un poco más sobre el juego.
 * Un último objetivo sería que esperan que se les muestre el contenido de una manera entretenida y mágica.
-
 
 ## 3. Problema
 
@@ -67,6 +65,7 @@ Por otro lado la app mostrará una sección de “Tips del juego”, en donde po
 La ideación de estas categorías nacieron de la encuesta encuesta realizada a algunos posibles usuarios de la app y nos respondieron sobre qué les gustaría saber sobre HP,  para complementar el juego.
 
 ![ScreenShot](src/images/Prototipo_alta_bienvenida.png)
+
 ## 5. Historias de Usuario
 
 #### 5.1 Que el usuario pueda ver todos los personajes del juego dentro de la pantalla principal.
@@ -104,7 +103,6 @@ La ideación de estas categorías nacieron de la encuesta encuesta realizada a a
 
 #### 5.5 Que el usuario tenga acceso a la sección de ¿Sabías qué?
 
-### Diseño de la Interfaz de Usuario
 
 ## 6. Decisiones de diseño
 
@@ -153,18 +151,31 @@ Por otro lado se decidió utilizar una tipografía San-serif para los textos lla
 * Sección ¿Sabías qué?
 ![ScreenShot](src/images/Prototipo_baja_sabias_que.png)
 
+Link Invision --> (https://natalia765201.invisionapp.com/freehand/App-Harry-Potter-qeoVOb3xp)
+
 #### 7.3 Prototipo alta fidelidad y navegable- Figma
 
 * Pantalla Principal - Filtro personajes
 ![ScreenShot](src/images/Prototipo_alta.png)
 
+Link Figma --> (https://www.figma.com/file/ozArcDDI8mD3WwcBE8yr9t/Proyecto-Harry-Potter?node-id=34%3A0)
+
 ## 8. Test de usuarios
 
+Con el prototipo de alta ya diseñado en figma, se hizo navegable, con la intención de hacer **pruebas**de la interfaz y de si se estaba entendiendo bien el diseño.
+Se realizaron 4 test de usuarios, de los cuales pudimos rescatar un muy buen feedback para poder hacer una **iteración**.
+Las tareas principales que se les pidió realizar a nuestros usuarios fueron:
+* Que al momento de ingresar pudiese detectar a un personaje que le diremos
+* Que pudiera filtrar por casa de estudios
 
-### Iteración(*)
+**Feedback Test de Usuarios**
+![ScreenShot](src/images/Feedback_usuarios.png)
 
 ## 9. Organización -Trello 
 
-(https://trello.com/b/nxcIBMUn/proyecto-datalovers-3)
+Link Trello -->(https://trello.com/b/nxcIBMUn/proyecto-datalovers-3)
 
-## 10. Propuestas de mejoras(*)
+## 10. Link Google Drive
+
+Link Trello -->(https://drive.google.com/drive/folders/1LPupZMUn6PSBk1QgMRhpIbjau87S06Tk?usp=sharing)
+
