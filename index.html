@@ -7,25 +7,21 @@
    <link rel="stylesheet" href="style.css" />
    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;600&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
  </head>
-<body>
-  <div class="container">
+<body class="container">
     <!--Header-->
-    <header id="header" class="not-visible">
-      <div class="logo-nav-header"> 
-        <img class="logo" src="images/Logo-Harry.png" alt="Logo de Potterland">
-            <nav class="">
-            <ul>
-              <li><a href=""> Personajes</a></li>
-              <li><a href=""> Tips del juego</a></li>
-              <li><a href=""> Hechizos</a></li>
-              <li><a href=""> ¿Sabías qué?</a></li>
-            </ul>
-          </nav>
-          <section class="search">
-            <input type='search' id='search-container' placeholder='Buscar...'>
-            <input type='button' id='search' value='Ir'>
-          </section>
-      </div> 
+    <header class="not-visible row col-12" id="header">
+      <img class="col-3 logo" src="images/Logo-Harry.png" alt="Logo de Potterland">
+      <nav class="col-6">
+        <ul>
+          <li><a href="#"> Personajes</a></li>
+          <li><a href="#"> Tips del juego</a></li>
+          <li><a href="#"> Hechizos</a></li>
+          <li><a href="#"> ¿Sabías qué?</a></li>
+        </ul>
+      </nav>
+      <section class="col-3">
+        <input class="search" type='search' id='search-container' placeholder='Buscar Personaje'>
+      </section>
     </header>
     <!--Pantalla Bienvenida-->
     <section id="welcome" class="welcome">
@@ -42,7 +38,7 @@
     <!--Pantalla Principal-->
     <main id="principalScreen" class="principalScreen not-visible">
       <!--Sección Personajes-->
-      <section class='' id="root">
+      <section id="root">
         <div class="tittle-user">
           <h2>Personajes de Harry Potter</h2>
           <p>Bienvenidx a PotterLand <strong><span id="showName"></span></strong></p>
@@ -79,7 +75,7 @@
             </select>
           </div>
         </div>
-        <div class="grid" id="grid" style=" overflow: hidden;"> <!-- Div donde se muestran los personajes en la pantalla principal-->
+        <div class="grid" id="grid" > <!-- Div donde se muestran los personajes en la pantalla principal-->
         </div>
       </section>
       <!--Sección Tips del juego-->
@@ -116,7 +112,5 @@
       </div>
     </footer>
     <script src="main.js" type="module"></script>
-  </div>
 </body>
-
 </html>

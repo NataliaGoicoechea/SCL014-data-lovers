@@ -1,46 +1,36 @@
-import data from './data/potter/potter.js';
-
-// Se guarda toda la tada en la variable AllData
-const allData = data;
-
-// Funcione all y orenar de la a a la z
-function orderAll() {
-  return allData;
-}
-function orderAToZ() {
+function orderAToZ(allData) {
   return allData.sort((a, b) => a.name.localeCompare(b.name));
 // Llama a la función y le envía toda la data con un sort de a a-z
 }
 
-
-export function orderHouse(houseSelected) {
-  const selectedHouse = allData.filter(harryPotter => harryPotter.house.includes(houseSelected));
-  const allHouses = allData.filter(harryPotter => harryPotter.house);
+export function orderHouse(allData, houseSelected) {
+  const selectedHouse = allData.filter(character => character.house.includes(houseSelected)); // Incluye el nombre de la casa selec
+  const allHouses = allData.filter(character => character.house);
   if (houseSelected !== 'all') {
     return selectedHouse;
   }
   return allHouses;
 }
 
-export function orderWand(wandSelected) {
-  const selectedWand = allData.filter(harryPotter => harryPotter.wand.core.includes(wandSelected));
-  const allWands = allData.filter(harryPotter => harryPotter.wand.core !== '');
+export function orderWand(allData, wandSelected) {
+  const selectedWand = allData.filter(character => character.wand.core.includes(wandSelected));
+  const allWands = allData.filter(character => character.wand.core);
   if (wandSelected !== 'all') {
     return selectedWand;
   }
   return allWands;
 }
 
-export function filterData(selection) {
+export function filterData(allData, selection) {
   let result = [];
   switch (selection) { // Función de control de flujo de dato
-    case 'az': result = orderAToZ();// ejecuta la función
+    case 'az': result = orderAToZ(allData);// ejecuta la función
       break;// no continúa recorriendo la finción y ejecuta orderAll
-    case 'studyHouse' : result = orderHouse('all');
+    case 'studyHouse': result = orderHouse(allData, 'all');
       break;
-    case 'wands' : result = orderWand('all');
+    case 'wands': result = orderWand(allData, 'all');
       break;
-    default: result = orderAll();
+    default: result = allData;
   }
   return result;
 }
