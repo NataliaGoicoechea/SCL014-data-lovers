@@ -32,7 +32,7 @@ Nuestros posibles usuarios son personas muy curiosas y que desean saber más all
 
 #### 2.1 Mapa de empatía 
 Para comprender mejor a nuestros usuarios, es que creamos un mapa de empatía, el cual nos ayudó a visualizar más a fondo a nuestros usuarios: reconocer sus necesidades, lo que dice y hace, vé, olle de los demás y siente, a demás de sus miedos o dolores y aspiraciones.
-![ScreenShot](Mapa_empatia.png)
+(/src/images/Mapa_empatia.png)
 
 Fuente: https://www.iteramos.com/pregunta/53479/la-imagen-no-aparece-en-readmemd-en-github
 
