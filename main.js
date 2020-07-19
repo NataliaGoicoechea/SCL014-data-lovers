@@ -36,7 +36,7 @@ const showCharacters = (data) => {
         </div>
         <div class="patronus">
           <img class="icon" src="images/family.svg">
-          <p>Ascendencia:</p>
+          <p>Ascendencia</p>
           <div class="font">${data[i].ancestry}</div>
         </div>
         <div class="patronus">
@@ -45,10 +45,10 @@ const showCharacters = (data) => {
           <div class="font">${data[i].patronus}</div>
         </div>
       </div>
-      <div Class="box-icon bottom">
-        <div class="patronus">
+      <div Class="box-icon">
+        <div class="patronus-b">
           <img class="icon" src="images/backstage.svg">
-          <p>Actor:</p>
+          <p>Actor</p>
           <div class="font">${data[i].actor}</div>
         </div>
         <div class="patronus-b">
@@ -56,7 +56,7 @@ const showCharacters = (data) => {
         <p>Varita</p>
         <div class="font">Madera:${data[i].wand.wood}</div>
         <div class="font">Núcleo:${data[i].wand.core}</div>
-        <div class="font">Longitud:${data[i].wand.length}<</div>
+        <div class="font">Longitud:${data[i].wand.length}</div>
       </div>
       </div>
     </div>
