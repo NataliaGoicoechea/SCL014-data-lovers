@@ -45,7 +45,7 @@ Como resultado se obtuvieron valiosas respuestas, las que se tomaron en cuenta p
 Link Encuesta-->(https://barbyfrancia.typeform.com/report/MexyARuS/6tc142pdomau3SA7)
 
 
-#### 2.1 Objetivos de usuario
+#### 2.3 Objetivos de usuario
 
 * El objetivo principal de nuestros usuarios, es que la aplicación sea informativa y muestre contenido sobre Harry Potter, como sus personajes,características, lugares, historias, pócimas, etc.
 * Otro de los objetivos que esperan nuestros usuarios, es encontrarse con una interfaz amigable, intuitiva y que los oriente a conocer un poco más sobre el juego.
@@ -85,9 +85,9 @@ La ideación de estas categorías nacieron de la encuesta encuesta realizada a a
 
 **Criterios de Aceptación:**
 * Filtrarlos alfabéticamente
-* Filtrarlos por patronus
 * Filtrarlos por casas de estudio 
 * Filtrarlos por varitas
+* Todos
 
 **Definición de Terminado:**
 * Escribir el test unitario y que pase correctamente.(npm test)
@@ -96,22 +96,15 @@ La ideación de estas categorías nacieron de la encuesta encuesta realizada a a
 
 #### 5.3 Que el usuario tenga acceso a la sección de tips de juegos
 
-**Criterios de aceptación:**
-**Definición de terminado:**
-
 #### 5.4 Que el usuario tenga acceso a la sección de hechizos
 
-**Criterios de aceptación:**
-**Definición de terminado:**
-
 #### 5.5 Que el usuario tenga acceso a la sección de ¿Sabías qué?
-
-**Criterios de aceptación:**
-**Definición de terminado:**
 
 ### Diseño de la Interfaz de Usuario
 
 ## 6. Decisiones de diseño
+
+![ScreenShot](src/images/Prototipo_alta.png)
 
 #### 6.1 Elementos visuales:
 Se incorporará un estilo minimalista, pero llamativo a la vez, la intención es no saturar el sitio de elementos, para destacar la información que es lo más relevante de la página.
