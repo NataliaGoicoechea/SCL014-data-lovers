@@ -22,6 +22,8 @@
 El proyecto que se mostrará a continuación, tiene como objetivo principal ser una aplicación complementaria al juego de realidad virtual “Harry Potter Wizards Unite”, salido el año 2019.
 Con el fin de brindarle a nuestros usuarios la oportunidad de conocer más a fondo algunas de las características de los personajes de **Harry Potter**, aprender sobre los hechizos y pociones más importantes, así como también tendrán la oportunidad de recordar y descubrir datos curiosos de los lugares más épicos de la saga.
 
+Link Wizards Unite web --> (https://www.wizardingworld.com/)
+
 ## 2. Perfil de Usuario
 
 Luego de una investigación a fondo sobre el mundo de HP (películas, libros, App Wizards Unite, foros, sitio comunidad Wizards Unite), es que pudimos descubrir quiénes serán nuestros usuarios principales de PotterLand. 
@@ -41,6 +43,8 @@ Para comprender mejor a nuestros usuarios, es que creamos un mapa de empatía, e
 
 Con el fin de obtener información sobre las **reales necesidades** de nuestros usuarios, es que previamente al diseño de la aplicación, se realizó la siguiente encuesta a un total de 31 personas que eran fan de Harry Potter y que no necesariamente hubiesen jugado el juego.
 Como resultado se obtuvieron valiosas respuestas, las que se tomaron en cuenta para que nuestra aplicación resolviera sus principales dolores.
+
+![ScreenShot](src/images/Pantallazo_encuestas.png)
 
 Link Encuesta-->(https://barbyfrancia.typeform.com/report/MexyARuS/6tc142pdomau3SA7)
 
@@ -104,34 +108,58 @@ La ideación de estas categorías nacieron de la encuesta encuesta realizada a a
 
 ## 6. Decisiones de diseño
 
-![ScreenShot](src/images/Prototipo_alta.png)
+* Hoja de Estilos
+![ScreenShot](src/images/Hoja_estilos.png)
 
 #### 6.1 Elementos visuales:
+
 Se incorporará un estilo minimalista, pero llamativo a la vez, la intención es no saturar el sitio de elementos, para destacar la información que es lo más relevante de la página.
 Se utilizarán bordes redondeados para las imágenes y los botones, para establecer una interfaz amigable y el uso de líneas delgadas para divisiones y detalles.
 
 #### 6.2 Paleta de colores:
-Se utilizarán dos colores principales, el **azul marino**, el cual transmite la sensación de misterio y profundidad, por otro lado se utilizará el **Ocre**, el cual va con el concepto de magia y que se quiere transmitir a los usuarios y evoca el brillo caracteristico de los hechizos y también con el fin de generar un contraste y de destacar algunos elementos. Además se utilizará la **Escala de grises** para ayudar al contraste, dependiendo cual sea la necesidad.
+
+Se utilizarán dos colores principales:
+* el **azul marino**, el cual transmite la sensación de misterio y profundidad.
+* Por otro lado se utilizará el **Ocre**, el cual va con el concepto de magia y que se quiere transmitir a los usuarios y evoca el brillo caracteristico de los hechizos y también con el fin de generar un contraste y de destacar algunos elementos.
+* Además se utilizará la **Escala de grises** para ayudar al contraste, dependiendo cual sea la necesidad.
+Para darle un aire de misterio a la aplicación es que se tomó la decisión de utilizar un gris oscuro de fondo, y encima de este los demás elementos.
+
 
 #### 6.3 Tipografía:
 Se decidió utilizar una tipografía serif, llamada **Eczar**, ya que evoca al concepto de la magia y la historia, esta fuente será utilizada para títulos y Subtítulos ya que es llamativa.
 Por otro lado se decidió utilizar una tipografía San-serif para los textos llamada **Monserrat**, la cual es muy amigable a la vista del  usuario ya que facilita la lectura en la web.
 
-#### 6.4 Imágenes: (*)
-
 ## 7. Prototipos
 
 #### 7.1 Sketch 
 
-(https://drive.google.com/drive/folders/1LPupZMUn6PSBk1QgMRhpIbjau87S06Tk?usp=sharing) 
+* Dibujo a lápiz y papel
+![ScreenShot](src/images/Scketch.png)
 
 #### 7.2 Prototipo baja fidelidad- Invision
 
-(https://natalia765201.invisionapp.com/freehand/App-Harry-Potter-qeoVOb3xp) 
+* Pantalla Bienvenida
+![ScreenShot](src/images/Prototipo_baja_bienvenida.png)
 
-#### 7.3 Prototipo alta fidelidad y navegable- Figma(*)
+* Pantalla Principal - Filtro
+![ScreenShot](src/images/Prototipo_baja_filtro.png)
 
-## 8. Test de usuarios(*)
+* Sección Hechizos
+![ScreenShot](src/images/Prototipo_baja_Hechizos.png)
+
+* Sección Tips del Juego
+![ScreenShot](src/images/Prototipo_baja_Tips.png)
+
+* Sección ¿Sabías qué?
+![ScreenShot](src/images/Prototipo_baja_sabias_que.png)
+
+#### 7.3 Prototipo alta fidelidad y navegable- Figma
+
+* Pantalla Principal - Filtro personajes
+![ScreenShot](src/images/Prototipo_alta.png)
+
+## 8. Test de usuarios
+
 
 ### Iteración(*)
 
