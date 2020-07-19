@@ -169,7 +169,11 @@ Las tareas principales que se les pidió realizar a nuestros usuarios fueron:
 * Que pudiera filtrar por casa de estudios
 
 **Feedback Test de Usuarios**
+
 ![ScreenShot](src/images/Feedback_usuarios.png)
+
+Link Videos Test de usuarios y primer prototipo -->
+(https://drive.google.com/drive/folders/1YBISI8pcWgrPsIzq2s7XGxyQmQy5yqpc?usp=sharing)
 
 ## 9. Organización -Trello 
 
