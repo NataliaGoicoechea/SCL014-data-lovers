@@ -20,39 +20,49 @@
 ## 1. Preámbulo
 
 El proyecto que se mostrará a continuación, tiene como objetivo principal ser una aplicación complementaria al juego de realidad virtual “Harry Potter Wizards Unite”, salido el año 2019.
-Con el fin de brindarle a nuestros usuarios la oportunidad de conocer más a fondo algunas de las características de los personajes de Harry Potter, aprender sobre los hechizos y pociones más importantes, así como también tendrán la oportunidad de recordar y descubrir datos curiosos de los lugares más épicos de la saga.
+Con el fin de brindarle a nuestros usuarios la oportunidad de conocer más a fondo algunas de las características de los personajes de **Harry Potter**, aprender sobre los hechizos y pociones más importantes, así como también tendrán la oportunidad de recordar y descubrir datos curiosos de los lugares más épicos de la saga.
 
 ## 2. Perfil de Usuario
 
 Luego de una investigación a fondo sobre el mundo de HP (películas, libros, App Wizards Unite, foros, sitio comunidad Wizards Unite), es que pudimos descubrir quiénes serán nuestros usuarios principales de PotterLand. 
-Nos centramos principalmente en un perfil de usuario con un rango de edad entre los 25 a los 40 años, para hombres como mujeres que les guste Harry Potter y hayan visto las películas o leído los libros.
-Esta aplicación está pensada para usuarios que tuvieron  la experiencia de jugar Wizards Unite y que no se sintieron 100% satisfechos con la App, ya que esta no va contando una historia como ellos esperarían.
-Nuestros posibles usuarios son personas muy curiosas y que desean saber más allá sobre Harry Potter y también sobre el juego.
-
+Nos centramos principalmente en un perfil de usuario:
+* Con un rango de edad entre los 25 a los 40 años.
+* Para hombres como mujeres que les guste Harry Potter y hayan visto las películas o leído los libros.
+* Esta aplicación está pensada para usuarios que tuvieron  la experiencia de jugar Wizards Unite y que no se sintieron 100% satisfechos con la App, ya que esta no va contando una historia como ellos esperarían.
+* Nuestros posibles usuarios son personas muy curiosas y que desean saber más allá sobre Harry Potter y también sobre el juego.
 
 #### 2.1 Mapa de empatía 
+
 Para comprender mejor a nuestros usuarios, es que creamos un mapa de empatía, el cual nos ayudó a visualizar más a fondo a nuestros usuarios: reconocer sus necesidades, lo que dice y hace, vé, olle de los demás y siente, a demás de sus miedos o dolores y aspiraciones.
+
 ![ScreenShot](src/images/Mapa_empatia.png)
 
-Fuente: https://www.iteramos.com/pregunta/53479/la-imagen-no-aparece-en-readmemd-en-github
+#### 2.2 Encuesta a Usuarios
 
-Fuente: https://www.iteramos.com/pregunta/53479/la-imagen-no-aparece-en-readmemd-en-github
+Con el fin de obtener información sobre las **reales necesidades** de nuestros usuarios, es que previamente al diseño de la aplicación, se realizó la siguiente encuesta a un total de 31 personas que eran fan de Harry Potter y que no necesariamente hubiesen jugado el juego.
+Como resultado se obtuvieron valiosas respuestas, las que se tomaron en cuenta para que nuestra aplicación resolviera sus principales dolores.
 
-#### 2.2 Objetivos de usuario
+Link Encuesta-->(https://barbyfrancia.typeform.com/report/MexyARuS/6tc142pdomau3SA7)
 
-El objetivo principal de nuestros usuarios, es que la aplicación sea informativa y muestre contenido sobre HP, como sus personajes,características, lugares, historias, pócimas.
-Otro de los objetivos que esperan nuestros usuarios, es encontrarse con una interfaz amigable, intuitiva y que los oriente a conocer un poco más sobre el juego.
-Un último objetivo sería que esperan que se les muestre el contenido de una manera entretenida y mágica.
 
-## Problema
+#### 2.1 Objetivos de usuario
+
+* El objetivo principal de nuestros usuarios, es que la aplicación sea informativa y muestre contenido sobre Harry Potter, como sus personajes,características, lugares, historias, pócimas, etc.
+* Otro de los objetivos que esperan nuestros usuarios, es encontrarse con una interfaz amigable, intuitiva y que los oriente a conocer un poco más sobre el juego.
+* Un último objetivo sería que esperan que se les muestre el contenido de una manera entretenida y mágica.
+
+
+## 3. Problema
 
 El principal problema de nuestros usuarios jugadores es que se encuentran con un juego de realidad virtual (Wizards Unite), que no les enseña contenido sobre los personajes ni tampoco cuenta una historia a medida que va avanzando, ésto es el principal dolor de los jugadores ya que las personas que interactúan con esta app son fans de HP, por lo que les desilusiona el hecho de que no sea tan informativa.
 
-## Solución
+## 4. Solución
 
-Para solucionar el problema de la falta de información dentro del juego, es que creamos una página informativa y complementaria para los usuarios, donde por medio de filtros,podrán encontrar los personajes con sus características respectivas, sus patronus, casas de estudios, varitas, etc.
-Por otro lado la app mostrará una sección de “Tips para jugar”, sección de  “Hechizos” y otra de “¿Sabías qué?, ya que se realizó una encuesta a algunos posibles usuarios de la app y nos respondieron sobre qué les gustaría saber sobre HP,  para complementar el juego.
+Para solucionar el problema de la falta de información dentro del juego, es que creamos una página informativa y complementaria para los usuarios, donde por medio de filtros,podrán acceder a los datos y encontrar los personajes con sus características respectivas, sus patronus, casas de estudios, varitas, etc.
+Por otro lado la app mostrará una sección de “Tips del juego”, en donde podrán obtener información de cómo comenzar a jugar Wizards Unite, una  sección de  “Hechizos”, donde los usuarios podrán aprender sobre los hechizos más famosos de la saga y también aprender sobre pócimas  y a demás otra categoría  de “¿Sabías qué?”, la cual les mostrará datos curiosos que ocurren en las películas o los libros, como los lugares épicos, acceder al mapa de Howarts y sus alrededores, etc.
+La ideación de estas categorías nacieron de la encuesta encuesta realizada a algunos posibles usuarios de la app y nos respondieron sobre qué les gustaría saber sobre HP,  para complementar el juego.
 
+![ScreenShot](src/images/Prototipo_alta_bienvenida.png)
 ## 5. Historias de Usuario
 
 #### 5.1 Que el usuario pueda ver todos los personajes del juego dentro de la pantalla principal.
