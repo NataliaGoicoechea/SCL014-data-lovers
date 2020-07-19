@@ -1,49 +1,67 @@
 html {
-  scroll-behavior: smooth; /* Darle suavidad al momento de moverse*/
-}
-/* Función no mostrar */
-.not-visible {
-    display: none;
-}
-/* Centrar Texto */
-.text-center{
-    text-align: center;
-}
-/* BODY */
-/*Grid Sistem*/
-.container{
-    
-}
-body{
-    margin: 0px;
-    width: 100%;
-    height: auto;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #1d1d1d;
-    box-sizing: border-box;
-    display: flex;
-}
+    scroll-behavior: smooth; /* Darle suavidad al momento de moverse*/
+  }
+  /* Función no mostrar */
+  .not-visible {
+      display: none;
+  }
+  /*Grid Sistem*/
+  *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+  .container{
+      width: 100%;
+      max-width: 1440px;
+      margin: 0 auto;
+  }
+  /*Fila*/
+  .row:before, .row:after{
+      content: '';
+      display: flex;
+      clear: both;
+  }
+  /*Columnas*/
+  .col-1{width: 8,33333333%;}
+  .col-2{width: 16,66666666%;}
+  .col-3{width: 25%;}
+  .col-4{width: 33,33333333%;}
+  .col-5{width: 41,6666667%;}
+  .col-6{width: 50%;}
+  .col-7{width: 58,33333333%;}
+  .col-8{width: 66,66666667%;}
+  .col-9{width: 75%;}
+  .col-10{width: 83,33333333%;}
+  .col-11{width: 91,66666667%;}
+  .col-12{width: 100%;}
+  
+  /* BODY */
+  body{
+      height: auto;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #1d1d1d;
+      text-align: center;
+  }
 /* HEADER */
 header{
     background-color: #0f0f0f;
-    width: 100%;
     height: 80px;
     position: fixed;
     padding: 0px 40px;
     z-index: 1;
+    display: flex;
+    align-items: center;
+}
+/*Logo PotterLand*/
+.logo{
+    height: auto;
+    width: 15%;
+    margin-right: 5%;
 }
 /* Nav */
-.logo-nav-header{
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-}
-nav{
-    display: inline-block;
-    margin-top: 8px;
-}
 nav li{
-    display: inline;
+    display: inline-block;
 }
 nav a{
     color: #D2A03A;
@@ -56,10 +74,12 @@ nav a:hover{
     color: #ffffff;
     text-decoration: underline #D2A03A ;
 }
-/* Logo PotterLand */
-.logo{
-    width: 10%;
-    height: auto;
+/*Buscador*/
+.search{
+    float: right;
+    padding: 5px;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
 }
 /* PANTALLA BIENVENIDA */
 /* Background */
@@ -195,6 +215,7 @@ nav a:hover{
     display: block;
     margin: 0px 40px;
     padding-top: 95px;
+    z-index: 6;
 }
 .principalScreen h2{
     font-family: 'Eczar', serif;
@@ -231,19 +252,18 @@ label{
 
 /* Tarjeta Personajes */
 .shield{
-    max-width: 50px;
+    max-width: 60px;
     position: absolute;
     margin-left: 45%;
     margin-top: -3%;
 }
 .card{
     position: relative;
-    width: 40%;
-    max-height: 260px;
+    width: 45%;
+    height: auto;
     background: #080d1a;
     border-radius: 6px;
-    margin: 15px;
-    contain: layout;
+    margin: 18px;
     display: flex;
     transition: all .2s;
     box-shadow: 6px 11px 21px -1px rgba(0,0,0,0.4);
@@ -255,14 +275,13 @@ label{
 .card-left{
     width: 50%;
     height: 100%;
-    text-align: center;
 }
 #nameCharacter{
     font-family: 'Eczar', serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: #ffffff;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 hr{
     border: 0.5px solid #D2A03A;
@@ -281,30 +300,37 @@ hr{
     border-radius: 0px 6px 6px 0px;
 }
 .box-icon{
-    width: 100%;
-    margin-bottom: 15px;
+    width: 50%;
     display: flex;
+    text-align: initial;
+    margin: 7px 0px 0px 30px;
+}
+.patronus{
+    margin: 10px;
+}
+.patronus-b{
+    margin-left: 25px;
 }
 .box-icon p{
-    font-size: 10px;
+    font-size: 12px;
     color: white;
+    font-weight: 300;
     font-family: 'Montserrat', sans-serif;
 }
 .font{
-    font-size: 14px;
+    font-size: 12px;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    font-weight: 400;
 }
 .icon{
-    width: 60%;
+    width: 35px;
     height: auto;
-    margin: 0px 10px;
 }
 
 /* FOOTER */
 footer{
-    background-color: #010016;
+    background-color: #0f0f0f;
     width: 100%;
     display: flex;
     margin-top: 50px;

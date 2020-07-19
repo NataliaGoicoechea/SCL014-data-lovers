@@ -1,38 +1,52 @@
-import { orderHouse } from '../src/data.js';
-
+import { orderHouse, orderWand, filterData } from '../src/data.js';
+import data from '../src/data/potter/potter.js';
 
 describe('oderHouse', () => {
   it('is a function', () => {
     expect(typeof orderHouse).toBe('function');
   });
 
-  it('returns `selectedHouse`', () => {
-    expect(houseSelected()).toBe('Gryffindor');
+  it('Return number of the students of griffindor house', () => {
+    expect(orderHouse(data, 'Gryffindor')).toHaveLength(11);
   });
 });
-/*
-function mockData(){   // Emular un arreglo de la data con un objeto de un personaje
-  let potter = [{
-    name: 'Harry Potter',
-    species: 'human',
-    gender: 'male',
-    house: 'Gryffindor',
-    shield: './images/Gryffindor_shield.svg',
-    dateOfBirth: '31-07-1980',
-    yearOfBirth: 1980,
-    ancestry: 'Half-blood',
-    eyeColour: 'green',
-    hairColour: 'black',
-    wand: {
-      wood: 'Holly',
-      core: 'Phoenix Feather',
-      length: 11,
-    },
-    patronus: 'Stag',
-    hogwartsStudent: true,
-    hogwartsStaff: false,
-    actor: 'Daniel Radcliffe',
-    alive: true,
-    image: './images/Harry_Potter.jpg',
-  }]
-}*/
+
+describe('orderWand', () => {
+  it('is a function', () => {
+    expect(typeof orderWand).toBe('function');
+  });
+
+  it('Return types of wands', () => {
+    expect(orderWand(data, 'Phoenix Feather')).toHaveLength(2);
+  });
+});
+
+describe('filterData', () => {
+  it('is a function', () => {
+    expect(typeof filterData).toBe('function');
+  });
+
+  it('Return filter selected', () => {
+    expect(filterData(data, 'az')).toHaveLength(26);
+  });
+});
+
+describe('filterDataStudyHouse', () => {
+  it('is a function', () => {
+    expect(typeof filterData).toBe('function');
+  });
+
+  it('Return filter selected', () => {
+    expect(filterData(data, 'studyHouse')).toHaveLength(26);
+  });
+});
+
+describe('filterDataWands', () => {
+  it('is a function', () => {
+    expect(typeof filterData).toBe('function');
+  });
+
+  it('Return filter selected', () => {
+    expect(filterData(data, 'wands')).toHaveLength(26);
+  });
+});
