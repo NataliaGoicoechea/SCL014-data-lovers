@@ -11,31 +11,6 @@ html {
       margin: 0;
       padding: 0;
   }
-  .container{
-      width: 100%;
-      max-width: 1440px;
-      margin: 0 auto;
-  }
-  /*Fila*/
-  .row:before, .row:after{
-      content: '';
-      display: flex;
-      clear: both;
-  }
-  /*Columnas*/
-  .col-1{width: 8,33333333%;}
-  .col-2{width: 16,66666666%;}
-  .col-3{width: 25%;}
-  .col-4{width: 33,33333333%;}
-  .col-5{width: 41,6666667%;}
-  .col-6{width: 50%;}
-  .col-7{width: 58,33333333%;}
-  .col-8{width: 66,66666667%;}
-  .col-9{width: 75%;}
-  .col-10{width: 83,33333333%;}
-  .col-11{width: 91,66666667%;}
-  .col-12{width: 100%;}
-  
   /* BODY */
   body{
       height: auto;
@@ -60,6 +35,10 @@ header{
     margin-right: 5%;
 }
 /* Nav */
+nav{
+    text-align: center;
+    width: 800px;
+}
 nav li{
     display: inline-block;
 }
@@ -67,7 +46,7 @@ nav a{
     color: #D2A03A;
     text-decoration: none;
     font-family: 'Eczar', serif;
-    font-size: 18px;
+    font-size: 17px;
     padding: 15px;
 }
 nav a:hover{
@@ -80,6 +59,9 @@ nav a:hover{
     padding: 5px;
     font-size: 12px;
     font-family: 'Montserrat', sans-serif;
+}
+select{
+    border-radius: 2px;
 }
 /* PANTALLA BIENVENIDA */
 /* Background */
@@ -102,7 +84,7 @@ nav a:hover{
 }
 /* Logo PotterLand Bienvenida */
 .logo-welcome{
-    width: 50%;
+    width: 80%;
     height: auto;
 }
 /* Cuadro Bienvenida */
@@ -121,19 +103,22 @@ nav a:hover{
 }
 .sign-in h2{
     font-family: 'Eczar', serif;
-    font-size: 24px;
+    font-size: 21px;
+    line-height: 25px;
+    margin-top: 15px;
 }
 .sign-in p{
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
-    margin: 0 15px;
+    margin: 15px 15px;
     text-align: left;
+    line-height: 20px;
 }
 .user{
     display: flex;
     flex-flow: column;
-    width: 60%;
+    width: 50%;
     justify-content: center;
     margin: 0 auto;
     margin-top: 15px;
@@ -215,11 +200,10 @@ nav a:hover{
     display: block;
     margin: 0px 40px;
     padding-top: 95px;
-    z-index: 6;
 }
 .principalScreen h2{
     font-family: 'Eczar', serif;
-    font-size: 26px;
+    font-size: 24px;
     color: white;
     text-align: center;
     font-weight: 400;
@@ -229,14 +213,15 @@ nav a:hover{
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     float: right;
-    margin-top: -55px;
+    margin-top: -30px;
+    font-size: 14px;
+    text-align: right;
 }
 /* FILTROS*/
 .filter{
-    margin: 0px 0px 20px 40px;
+    margin: 15px 0px 20px 20px;
     display: flex;
     height: 20px;
-    font-size: 14px;
 }
 select:focus{
     outline: none;
@@ -244,7 +229,7 @@ select:focus{
 label{
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
     margin: 0px 10px 0px 10px;
     width: 100px;
@@ -275,6 +260,7 @@ label{
 .card-left{
     width: 50%;
     height: 100%;
+    margin: 15px;
 }
 #nameCharacter{
     font-family: 'Eczar', serif;
@@ -300,16 +286,16 @@ hr{
     border-radius: 0px 6px 6px 0px;
 }
 .box-icon{
-    width: 50%;
     display: flex;
     text-align: initial;
-    margin: 7px 0px 0px 30px;
 }
 .patronus{
     margin: 10px;
+    width: 50%;
 }
 .patronus-b{
-    margin-left: 25px;
+    margin: 10px;
+    width: 30%;
 }
 .box-icon p{
     font-size: 12px;

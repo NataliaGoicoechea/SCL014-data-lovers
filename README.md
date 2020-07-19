@@ -1,4 +1,4 @@
-# Data Lovers
+# PotterLand
 
 ## Índice
 
@@ -19,13 +19,22 @@
 
 ## 1. Preámbulo
 
+El proyecto que se mostrará a continuación, tiene como objetivo principal ser una aplicación complementaria al juego de realidad virtual “Harry Potter Wizards Unite”, salido el año 2019.
+Con el fin de brindarle a nuestros usuarios la oportunidad de conocer más a fondo algunas de las características de los personajes de Harry Potter, aprender sobre los hechizos y pociones más importantes, así como también tendrán la oportunidad de recordar y descubrir datos curiosos de los lugares más épicos de la saga.
+
 ## 2. Perfil de Usuario
 
-Para nuestra app nos centramos principalmente en un perfil de usuario con un rango de edad entre los 12 a los 55 años, tanto para hombres como para mujeres, que les guste Harry Potter y hayan visto las películas o leído los libros. Aunque no sean expertos en el juego (jugadores principiantes), pero que sí son muy curiosos y desean tener más información sobre Harry Potter y también sobre el juego.
+Luego de una investigación a fondo sobre el mundo de HP (películas, libros, App Wizards Unite, foros, sitio comunidad Wizards Unite), es que pudimos descubrir quiénes serán nuestros usuarios principales de PotterLand. 
+Nos centramos principalmente en un perfil de usuario con un rango de edad entre los 25 a los 40 años, para hombres como mujeres que les guste Harry Potter y hayan visto las películas o leído los libros.
+Esta aplicación está pensada para usuarios que tuvieron  la experiencia de jugar Wizards Unite y que no se sintieron 100% satisfechos con la App, ya que esta no va contando una historia como ellos esperarían.
+Nuestros posibles usuarios son personas muy curiosas y que desean saber más allá sobre Harry Potter y también sobre el juego.
+
 
 #### 2.1 Mapa de empatía 
+Para comprender mejor a nuestros usuarios, es que creamos un mapa de empatía, el cual nos ayudó a visualizar más a fondo a nuestros usuarios: reconocer sus necesidades, lo que dice y hace, vé, olle de los demás y siente, a demás de sus miedos o dolores y aspiraciones.
+![ScreenShot](Mapa_empatia.png)
 
-(https://drive.google.com/drive/u/0/folders/1LPupZMUn6PSBk1QgMRhpIbjau87S06Tk)
+Fuente: https://www.iteramos.com/pregunta/53479/la-imagen-no-aparece-en-readmemd-en-github
 
 #### 2.2 Objetivos de usuario
 
