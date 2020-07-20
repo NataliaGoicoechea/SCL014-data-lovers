@@ -155,8 +155,17 @@ Link Invision --> (https://natalia765201.invisionapp.com/freehand/App-Harry-Pott
 
 #### 7.3 Prototipo alta fidelidad y navegable- Figma
 
-* Pantalla Principal - Filtro personajes
-![ScreenShot](src/images/Prototipo_alta.png)
+* Pantalla Principal - Todos los personajes
+![ScreenShot](src/images/Pantalla_principal.png)
+
+* Pantalla Principal - Información del personaje
+![ScreenShot](src/images/personaje.png)
+
+* Pantalla Principal - Sección Hechizos
+![ScreenShot](src/images/Hechizos.png)
+
+* Pantalla Principal - Sección ¿Sabías Qué?
+![ScreenShot](src/images/sabias_que.png)
 
 Link Figma --> (https://www.figma.com/file/ozArcDDI8mD3WwcBE8yr9t/Proyecto-Harry-Potter?node-id=34%3A0)
 
